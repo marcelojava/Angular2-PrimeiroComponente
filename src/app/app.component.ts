@@ -10,6 +10,7 @@ import {AppService} from "./services/app.service";
 export class AppComponent {
   title = 'app works!';
   nomes = [];
+  imagem = 'http://lorempixel.com/400/200/';
 
   constructor(appService : AppService) {
     this.nomes = appService.getNomes();
