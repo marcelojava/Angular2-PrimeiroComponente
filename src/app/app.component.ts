@@ -13,6 +13,7 @@ export class AppComponent {
   nomes = [];
   imagem = 'http://lorempixel.com/400/200/';
   count : number = 0;
+  nome : string = '';
 
   constructor(appService : AppService) {
     this.nomes = appService.getNomes();

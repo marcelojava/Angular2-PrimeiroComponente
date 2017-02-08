@@ -59,3 +59,13 @@
   {{count}}
   <button (click)="onClick()">Me clique</button>
 </section>
+
+<section>
+  <article>
+    <h3>Two-way data binding</h3>
+    <div>
+      <input type="text" [(ngModel)]="nome">
+     <p>voce digitou esse nome {{nome}}</p>
+    </div>
+  </article>
+</section>
