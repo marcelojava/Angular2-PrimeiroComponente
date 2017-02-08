@@ -1,3 +1,9 @@
+<html>
+  <head>
+    <link href="/node_modules/bootstrap/dist/css/bootstrap.min.css" rel="stylesheet"/>
+  </head>
+</html>
+
 <h1>
   {{title}}
 </h1>
@@ -12,5 +18,26 @@
   <article>
     <img src="{{imagem}}">
     <img [src]="imagem">
+  </article>
+
+  <article>
+    <h3>Class layout binding</h3>
+    <div>
+      Selecione uma classe
+      <select #classe (change)="0">
+        <option value="alert-success">Success</option>
+        <option value="alert-info">Info</option>
+        <option value="alert-warning">Warning</option>
+        <option value="alert-danger">Error</option>
+      </select>
+    </div><br/><br/>
+
+    <div class="alert" role="alert"
+    [class.alert-success]="classe.value == 'alert-success'">Success
+    </div>
+
+    <div class="alert" role="alert">Info</div>
+    <div class="alert" role="alert">Warning</div>
+    <div class="alert" role="alert">Error</div>
   </article>
 </section>
