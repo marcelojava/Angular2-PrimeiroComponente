@@ -1,6 +1,6 @@
 <html>
   <head>
-    <link href="/node_modules/bootstrap/dist/css/bootstrap.min.css" rel="stylesheet"/>
+    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet"/>
   </head>
 </html>
 
@@ -40,4 +40,10 @@
     <div class="alert" role="alert">Warning</div>
     <div class="alert" role="alert">Error</div>
   </article>
+
+  <input type="text"
+    (keyup)="countCaracter($event)"
+  >
+  {{count}}
+  <button (click)="onClick()">Me clique</button>
 </section>
